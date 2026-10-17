@@ -97,12 +97,6 @@ window.SITE = {
               detail: "글·이미지·숫자·소리 데이터를 모아 분류 모델을 만들고, 스크래치 블록으로 불러와 챗봇이나 게임을 만들어 볼 수 있습니다. (일부 메뉴 영어)"
             },
             {
-              name: "Code.org 댄스 파티",
-              url: "https://code.org/dance",
-              desc: "블록 코딩으로 춤추는 캐릭터를 만드는 Code.org 활동",
-              detail: "좋아하는 음악에 맞춰 캐릭터의 춤 동작을 코딩하고, AI 기능으로 분위기에 어울리는 효과를 자동으로 만들어 볼 수 있습니다."
-            },
-            {
               name: "구글 AI 실험 모음",
               url: "https://experiments.withgoogle.com/collection/ai",
               desc: "구글이 만든 AI 체험 실험을 한곳에 모은 사이트",
@@ -153,12 +147,6 @@ window.SITE = {
               url: "https://artsexperiments.withgoogle.com/living-archive",
               desc: "포즈를 이어 붙여 나만의 안무를 만드는 구글 예술 실험",
               detail: "다양한 무용 동작을 둘러보거나, 웹캠 앞에서 취한 포즈와 비슷한 동작을 찾아 이어 붙여 안무를 완성할 수 있습니다."
-            },
-            {
-              name: "Semi-Conductor",
-              url: "https://semiconductor.withgoogle.com/",
-              desc: "팔 동작으로 가상 오케스트라를 지휘하는 구글 실험",
-              detail: "웹캠 앞에서 팔을 움직이면 AI가 자세를 인식해 연주의 빠르기, 셈여림, 악기 파트를 바꿔 줍니다. 음악 수업과 연계하기 좋습니다."
             }
           ]
         },
@@ -396,12 +384,6 @@ window.SITE = {
         {
           title: "국어",
           items: [
-            {
-              name: "샘보드",
-              url: "https://samboard.vivasam.com/landing",
-              desc: "비상교육 비바샘의 수업용 디지털 보드",
-              detail: "교과서 자료와 다양한 수업 도구를 한 화면에 띄워 판서하고, 학생 참여 활동을 진행할 수 있습니다."
-            },
             {
               name: "표준국어대사전",
               url: "https://stdict.korean.go.kr/",
