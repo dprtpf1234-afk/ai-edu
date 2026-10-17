@@ -3,7 +3,7 @@
 
   const SITE = window.SITE;
   const PAGES = SITE.pages;
-  const VISIBLE_IN_NAV = 5; // 상단 메뉴에 바로 보일 페이지 수 (나머지는 '더보기')
+  const VISIBLE_IN_NAV = 99; // 상단 메뉴에 바로 보일 페이지 수 (넘치는 페이지는 '더보기'로 묶임)
 
   const $ = (sel) => document.querySelector(sel);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -67,6 +67,9 @@
 
   function markActive(id) {
     document.querySelectorAll("[data-id]").forEach((a) => a.classList.toggle("active", a.dataset.id === id));
+    // 좁은 화면에서 탭 줄이 가로로 넘칠 때 현재 탭이 보이도록 이동
+    const cur = els.nav.querySelector("a.active");
+    if (cur) els.nav.scrollLeft = cur.offsetLeft - (els.nav.clientWidth - cur.offsetWidth) / 2;
   }
 
   /* ───────── 화면 그리기 ───────── */
@@ -118,7 +121,7 @@
               <span class="cat-count">${countItems(p) ? `자료 ${countItems(p)}개 →` : "준비 중 →"}</span>
             </a>`).join("")}
         </div>
-        <p class="empty" style="text-align:right">총 ${total}개의 사이트·자료가 정리되어 있습니다.</p>
+        <p class="home-total">총 ${total}개의 사이트·자료가 정리되어 있습니다.</p>
       </div>`;
   }
 
