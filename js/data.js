@@ -27,12 +27,368 @@ window.SITE = {
       "AI·디지털 교육에 필요한 자료를 한곳에 모았습니다.",
       "상단 메뉴(모바일은 오른쪽 위 ☰ 버튼)에서 원하는 페이지를 골라 이용해주세요.",
       "돋보기 버튼으로 모든 페이지의 자료를 한 번에 검색할 수 있습니다.",
-      "기존에 있던 자료는 삭제하지 말아주세요.",
       "항상 제작 중에 있습니다.... 빈 칸이 있더라도 놀라지 마시고 그러려니 부탁드립니다."
     ]
   },
 
   pages: [
+    /* ───────────────────────── 여러 유용한 사이트 ───────────────────────── */
+    {
+      id: "useful",
+      title: "여러 유용한 사이트",
+      icon: "🧰",
+      summary: "수업 준비, 퀴즈, 의견 수합, URL 단축, 웹 배포 도구",
+      sections: [
+        {
+          title: "수업 준비 및 수업 때 유용한 기능 (교사)",
+          items: [
+            {
+              name: "줌잇(ZOOMIT)",
+              url: "https://learn.microsoft.com/ko-kr/sysinternals/downloads/zoomit",
+              tag: "윈도우 프로그램",
+              desc: "화면 확대와 실시간 판서가 가능한 발표 보조 도구",
+              detail: "단축키로 화면의 특정 부분을 확대하고, 화면 위에 글씨나 도형을 그리며 설명할 수 있습니다."
+            },
+            {
+              name: "Snipaste",
+              url: "https://www.snipaste.com/",
+              tag: "윈도우·맥 프로그램",
+              desc: "캡처 후 화면에 고정(Pin)할 수 있는 캡처 프로그램",
+              detail: "원하는 영역을 빠르게 캡처한 뒤 반투명 창으로 화면 맨 위에 띄워 두고, 자료를 참고하며 작업할 수 있습니다."
+            },
+            {
+              name: "드래그 프리",
+              url: "https://chromewebstore.google.com/detail/%EB%93%9C%EB%9E%98%EA%B7%B8%ED%94%84%EB%A6%AC%EB%A7%88%EC%9A%B0%EC%8A%A4%EC%A0%9C%ED%95%9C-%ED%95%B4%EC%A0%9C+%EA%B8%80%EC%9E%90%EC%88%98%EC%84%B8%EA%B8%B0+%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%A0%80%EC%9E%A5/cnfngpgfjllafbghaimjcmailafcdhod?utm_source=ext_app_menu",
+              tag: "크롬 확장 프로그램",
+              desc: "우클릭·드래그 제한을 풀어 주는 브라우저 확장 프로그램",
+              detail: "복사나 드래그가 막힌 웹페이지에서 텍스트를 자유롭게 선택할 수 있게 해 줍니다."
+            },
+            {
+              name: "감마AI",
+              url: "https://gamma.app/create/generate",
+              desc: "주제만 입력하면 발표 자료(PPT)를 만들어 주는 AI",
+              detail: "생성된 슬라이드의 문장, 이미지, 레이아웃을 하나하나 수정할 수 있고 PPT 파일로 내려받을 수 있습니다."
+            },
+            {
+              name: "클래스툴",
+              url: "https://ctool.co.kr/",
+              desc: "실시간 상호작용 수업 지원 올인원 도구",
+              detail: "화면 공유, 화이트보드, 웹링크 전송, OX·객관식 퀴즈, 학생 화면 모니터링을 지원하며 학생은 회원가입 없이 클래스 코드로 참여합니다."
+            },
+            {
+              name: "캔바 AI",
+              url: "https://www.canva.com/ai",
+              desc: "캔바에 내장된 AI 디자인·글쓰기 기능",
+              detail: "수업 활동지와 슬라이드를 빠르게 제작하고, 페이지 번역과 음성 삽입까지 할 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "수업할 때 유용한 기능 (학생)",
+          items: [
+            {
+              name: "스노클",
+              url: "https://snorkl.app/",
+              desc: "학생의 풀이 설명에 AI가 즉시 피드백하는 플랫폼",
+              detail: "학생이 화면에 풀이를 쓰고 목소리로 설명을 녹음하면, AI가 생각 과정을 분석해 바로 피드백을 줍니다."
+            },
+            {
+              name: "스노클(사용방법)",
+              url: "https://www.youtube.com/watch?v=TuReGPbbhWc",
+              tag: "YouTube",
+              desc: "스노클 사용 방법 안내 영상",
+              detail: "과제 만들기부터 학생 참여, 피드백 확인까지 스노클의 기본 사용 흐름을 영상으로 확인할 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "학습 정리 퀴즈",
+          items: [
+            {
+              name: "김킷",
+              url: "https://www.gimkit.com/",
+              desc: "게임으로 복습하는 실시간 참여형 퀴즈 플랫폼",
+              detail: "정답을 맞혀 얻은 가상 화폐로 아이템을 사거나 전략을 펼치며 학습에 몰입할 수 있습니다."
+            },
+            {
+              name: "띵커벨",
+              url: "https://www.tkbell.co.kr/user/main.do?oauth2=ok&localeLanguage=ko&currentURL=%2Fuser%2Foauth2%2Foauth2LoginCheckCallback.do",
+              desc: "국내 수업 환경에 맞춘 상호작용형 퀴즈·평가 도구",
+              detail: "퀴즈, 워크시트, 보드 활동으로 학생의 이해도를 실시간으로 확인하고 피드백할 수 있습니다."
+            },
+            {
+              name: "블루킷",
+              url: "https://www.blooket.com/",
+              desc: "다양한 게임 모드의 액션형 온라인 퀴즈",
+              detail: "타워 디펜스, 레이스, 농장 경영 등 미니게임 형식으로 퀴즈를 풀며 학습 효과를 높입니다."
+            },
+            {
+              name: "젭퀴즈",
+              url: "https://quiz.zep.us/",
+              desc: "메타버스 공간에서 푸는 퀴즈 플랫폼",
+              detail: "아바타를 움직여 가상 공간을 탐험하며 O/X 퀴즈나 객관식 문제에 참여합니다."
+            },
+            {
+              name: "패들렛 아케이드",
+              url: "https://arcade.padlet.com/?utm_source=padlet_com_production&utm_medium=padlet_com_app_nav_dashboard&utm_campaign=promote_ta_on_padlet_app&utm_content=padlet_com_nav_desktop",
+              desc: "수업 자료를 게임으로 바꿔 주는 AI 게임 제작 도구",
+              detail: "주제나 문서, 웹 링크를 넣으면 AI가 짝맞추기·플래시카드·객관식 등 학습 게임을 빠르게 만들어 줍니다."
+            }
+          ]
+        },
+        {
+          title: "의견 수합",
+          items: [
+            {
+              name: "멘티미터",
+              url: "https://www.mentimeter.com/",
+              desc: "실시간 투표·워드클라우드 프레젠테이션 도구",
+              detail: "투표, 워드클라우드, 퀴즈, Q&A 슬라이드로 학생 의견을 즉시 모으고 시각화합니다."
+            },
+            {
+              name: "심스페이스",
+              url: "https://diary.seamspace.me/login",
+              desc: "AI 기반 학생 마음건강·사회정서학습(SEL) 플랫폼",
+              detail: "학생 감정 일기를 AI가 분석해 학급 정서 상태와 위기 신호를 교사 대시보드로 안내합니다."
+            },
+            {
+              name: "패들렛",
+              url: "https://padlet.com/",
+              desc: "의견과 자료를 함께 붙이는 디지털 협업 담벼락",
+              detail: "텍스트, 이미지, 영상, 링크를 메모지처럼 게시해 모둠 활동, 브레인스토밍, 과제 수집에 활용합니다."
+            },
+            {
+              name: "패들렛 샌드박스",
+              url: "https://padlet.com/site/sandbox",
+              desc: "패들렛의 자유 캔버스형 협업 화이트보드",
+              detail: "빈 캔버스 위에 그림, 글, 카드, 영상을 자유롭게 배치하며 실시간으로 함께 작업할 수 있습니다."
+            },
+            {
+              name: "캔바(라이브 기능)",
+              url: "https://www.canva.com/",
+              desc: "발표 중 청중과 실시간으로 소통하는 캔바 라이브",
+              detail: "발표 화면의 링크나 QR코드로 학생들이 질문·의견을 보내면 발표 화면에 실시간으로 띄울 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "수업에 바로 쓸 수 있는 에듀테크",
+          items: [
+            {
+              name: "에듀베이지",
+              url: "https://www.edubeige.com/",
+              desc: "선생님을 위한 에듀테크 수업 아이디어 모음",
+              detail: "국어·수학·학급경영 등 과목과 상황별로 에듀테크 도구와 활용 수업 사례를 찾아볼 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "에듀테크 모음",
+          items: [
+            {
+              name: "에듀집",
+              url: "https://www.edzip.kr/",
+              desc: "다양한 에듀테크 서비스를 모아 소개하는 플랫폼",
+              detail: "분야별 에듀테크 서비스 정보를 한곳에서 비교하고 수업에 맞는 도구를 고를 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "URL 단축 서비스",
+          items: [
+            {
+              name: "숏.한국",
+              url: "https://xn--0p4b.xn--3e0b707e/",
+              desc: "한글 도메인 기반 URL 단축 서비스",
+              detail: "긴 링크를 기억하기 쉬운 짧은 한글 주소로 바꿔 학생들에게 쉽게 안내할 수 있습니다."
+            },
+            {
+              name: "bit.ly",
+              url: "https://bitly.com/",
+              desc: "전 세계에서 널리 쓰이는 URL 단축 서비스",
+              detail: "짧은 링크와 QR코드를 만들고 클릭 수 통계를 확인할 수 있습니다. (회원가입 필요)"
+            },
+            {
+              name: "enn.kr",
+              url: "https://u.lrl.kr/",
+              desc: "간편한 무료 URL 단축 서비스",
+              detail: "회원가입 없이 긴 주소를 붙여 넣기만 하면 짧은 링크를 바로 만들 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "HTML 배포 사이트",
+          items: [
+            {
+              name: "깃허브(GitHub)",
+              url: "https://github.com/",
+              desc: "코드 저장소이자 무료 웹사이트 배포(GitHub Pages) 서비스",
+              detail: "직접 만든 HTML 파일을 저장소에 올리고 Pages 기능을 켜면 무료로 웹사이트 주소를 받을 수 있습니다. 이 사이트도 GitHub Pages로 배포되었습니다."
+            },
+            {
+              name: "Vercel",
+              url: "https://vercel.com/",
+              desc: "GitHub와 연동되는 웹사이트 자동 배포 플랫폼",
+              detail: "GitHub 저장소를 연결하면 코드를 올릴 때마다 자동으로 사이트가 갱신됩니다."
+            }
+          ]
+        }
+      ]
+    },
+
+    /* ───────────────────────── 과목별 에듀테크 ───────────────────────── */
+    {
+      id: "edutech",
+      title: "과목별 에듀테크",
+      icon: "📚",
+      summary: "국어·수학·미술 등 교과별로 바로 쓰는 에듀테크 도구",
+      sections: [
+        {
+          title: "국어",
+          items: [
+            {
+              name: "표준국어대사전",
+              url: "https://stdict.korean.go.kr/",
+              desc: "국립국어원이 만든 공식 국어사전",
+              detail: "낱말의 뜻, 발음, 활용형, 예문을 정확하게 찾아볼 수 있어 낱말 탐구와 국어사전 활용 수업에 쓰기 좋습니다."
+            },
+            {
+              name: "우리말샘",
+              url: "https://opendict.korean.go.kr/",
+              desc: "국립국어원의 참여형 국어사전",
+              detail: "신조어·지역어·전문어까지 폭넓게 실려 있고 그림 자료도 함께 볼 수 있어, 표준국어대사전과 비교하며 낱말을 탐구할 수 있습니다."
+            },
+            {
+              name: "바른한글 맞춤법 검사기",
+              url: "https://nara-speller.co.kr/speller/",
+              desc: "부산대학교와 나라인포테크가 만든 맞춤법·문법 검사기",
+              detail: "글을 붙여 넣으면 틀린 맞춤법과 띄어쓰기를 찾아 고칠 말과 이유를 알려 줘, 글쓰기 후 스스로 고쳐 쓰기 활동에 활용할 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "수학",
+          items: [
+            {
+              name: "똑똑 수학탐험대",
+              url: "https://www.toctocmath.kr/",
+              desc: "교육부·한국과학창의재단의 초등 수학 AI 학습 플랫폼",
+              detail: "게임형 탐험 활동으로 수학 개념을 익히고, AI가 학생별 학습 결과를 분석해 맞춤형 활동을 추천합니다."
+            },
+            {
+              name: "통계놀이터",
+              url: "https://kosis.kr/edu/index/index.do?sso=ok",
+              desc: "통계청 KOSIS의 어린이·청소년 통계 교육 사이트",
+              detail: "그래프 그리기, 통계 퀴즈, 통계 활용 사례 등으로 자료와 가능성 단원 수업에 활용하기 좋습니다."
+            },
+            {
+              name: "알지오매스",
+              url: "https://www.algeomath.kr/",
+              desc: "한국과학창의재단의 수학 탐구 플랫폼",
+              detail: "도형 그리기, 그래프 그리기, 블록 코딩 기능으로 수학 개념을 직접 조작하며 탐구할 수 있고, 교과 연계 활동 자료도 제공합니다."
+            }
+          ]
+        },
+        {
+          title: "과학",
+          items: [
+            {
+              name: "스텔라리움 웹",
+              url: "https://stellarium-web.org/",
+              desc: "브라우저에서 보는 실시간 밤하늘 별자리 지도",
+              detail: "날짜·시간·장소를 바꾸며 별자리와 행성, 달의 위치를 확인할 수 있어 지구와 우주 단원 수업에 활용하기 좋습니다."
+            }
+          ]
+        },
+        {
+          title: "사회",
+          items: [
+            {
+              name: "구글 어스",
+              url: "https://earth.google.com/web/",
+              desc: "3D 지구본으로 세계 곳곳을 탐험하는 구글 지도 서비스",
+              detail: "위성 사진과 3D 지형, 스트리트 뷰로 우리 지역과 세계 여러 나라의 자연환경과 인문환경을 생생하게 살펴볼 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "영어",
+          items: [
+            {
+              name: "퀴즐렛",
+              url: "https://quizlet.com/kr",
+              desc: "낱말 카드와 학습 게임으로 단어를 익히는 학습 도구",
+              detail: "영어 단어 세트를 만들어 플래시카드, 짝맞추기, 테스트 등 여러 방식으로 반복 학습할 수 있습니다."
+            },
+            {
+              name: "Storyline Online",
+              url: "https://storylineonline.net/",
+              desc: "배우들이 영어 그림책을 읽어 주는 무료 영상 사이트",
+              detail: "그림책 장면과 함께 원어민의 실감 나는 낭독을 들을 수 있어 영어 듣기와 읽기 수업에 활용하기 좋습니다."
+            }
+          ]
+        },
+        {
+          title: "음악",
+          items: [
+            {
+              name: "크롬 뮤직랩",
+              url: "https://musiclab.chromeexperiments.com/",
+              desc: "놀이처럼 음악 원리를 체험하는 구글의 음악 실험실",
+              detail: "송 메이커, 리듬, 화음, 소리 파형 등 다양한 실험으로 설치 없이 바로 작곡하고 음악 요소를 탐구할 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "미술",
+          items: [
+            {
+              name: "투닝",
+              url: "https://tooning.io/",
+              desc: "AI로 웹툰·캐릭터를 쉽게 만드는 디지털 창작 도구",
+              detail: "글만 입력해도 AI가 장면을 만들어 주고, 캐릭터 표정·동작을 바꿔 4컷 만화나 학습 만화를 손쉽게 제작할 수 있습니다."
+            },
+            {
+              name: "캔바",
+              url: "https://www.canva.com/",
+              desc: "템플릿 기반 온라인 디자인 도구",
+              detail: "포스터, 카드뉴스, 프레젠테이션 등을 다양한 템플릿으로 쉽게 디자인하고 모둠별로 함께 편집할 수 있습니다."
+            },
+            {
+              name: "구글 아트 앤 컬처",
+              url: "https://artsandculture.google.com/",
+              desc: "세계 미술관·박물관 작품을 고화질로 감상하는 구글 서비스",
+              detail: "명화를 확대해 붓 터치까지 살펴보고, 가상 미술관 투어와 다양한 미술 놀이 실험으로 감상 수업을 할 수 있습니다."
+            },
+            {
+              name: "미리캔버스",
+              url: "https://www.miricanvas.com/",
+              desc: "한글 템플릿이 풍부한 국내 온라인 디자인 도구",
+              detail: "포스터, 카드뉴스, 상장, 학급 게시물 등을 한글 글꼴과 템플릿으로 쉽게 만들 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "실과",
+          items: [
+            {
+              name: "농사로",
+              url: "https://www.nongsaro.go.kr/",
+              desc: "농촌진흥청의 농업기술 정보 포털",
+              detail: "작물별 재배 방법과 시기, 병해충 정보를 찾아볼 수 있어 식물 기르기와 텃밭 가꾸기 단원에 활용하기 좋습니다."
+            },
+            {
+              name: "커리어넷",
+              url: "https://www.career.go.kr/",
+              desc: "교육부·한국직업능력연구원의 진로 정보 사이트",
+              detail: "진로 심리검사, 직업 정보, 학과 정보, 진로 활동 자료를 제공해 일과 직업·진로 탐색 수업에 활용할 수 있습니다."
+            }
+          ]
+        },
+        { title: "체육", items: [] }
+      ]
+    },
+
     /* ───────────────────────── 인공지능(AI) ───────────────────────── */
     {
       id: "ai",
@@ -374,159 +730,6 @@ window.SITE = {
       ]
     },
 
-    /* ───────────────────────── 과목별 에듀테크 ───────────────────────── */
-    {
-      id: "edutech",
-      title: "과목별 에듀테크",
-      icon: "📚",
-      summary: "국어·수학·미술 등 교과별로 바로 쓰는 에듀테크 도구",
-      sections: [
-        {
-          title: "국어",
-          items: [
-            {
-              name: "표준국어대사전",
-              url: "https://stdict.korean.go.kr/",
-              desc: "국립국어원이 만든 공식 국어사전",
-              detail: "낱말의 뜻, 발음, 활용형, 예문을 정확하게 찾아볼 수 있어 낱말 탐구와 국어사전 활용 수업에 쓰기 좋습니다."
-            },
-            {
-              name: "우리말샘",
-              url: "https://opendict.korean.go.kr/",
-              desc: "국립국어원의 참여형 국어사전",
-              detail: "신조어·지역어·전문어까지 폭넓게 실려 있고 그림 자료도 함께 볼 수 있어, 표준국어대사전과 비교하며 낱말을 탐구할 수 있습니다."
-            },
-            {
-              name: "바른한글 맞춤법 검사기",
-              url: "https://nara-speller.co.kr/speller/",
-              desc: "부산대학교와 나라인포테크가 만든 맞춤법·문법 검사기",
-              detail: "글을 붙여 넣으면 틀린 맞춤법과 띄어쓰기를 찾아 고칠 말과 이유를 알려 줘, 글쓰기 후 스스로 고쳐 쓰기 활동에 활용할 수 있습니다."
-            }
-          ]
-        },
-        {
-          title: "수학",
-          items: [
-            {
-              name: "똑똑 수학탐험대",
-              url: "https://www.toctocmath.kr/",
-              desc: "교육부·한국과학창의재단의 초등 수학 AI 학습 플랫폼",
-              detail: "게임형 탐험 활동으로 수학 개념을 익히고, AI가 학생별 학습 결과를 분석해 맞춤형 활동을 추천합니다."
-            },
-            {
-              name: "통계놀이터",
-              url: "https://kosis.kr/edu/index/index.do?sso=ok",
-              desc: "통계청 KOSIS의 어린이·청소년 통계 교육 사이트",
-              detail: "그래프 그리기, 통계 퀴즈, 통계 활용 사례 등으로 자료와 가능성 단원 수업에 활용하기 좋습니다."
-            },
-            {
-              name: "알지오매스",
-              url: "https://www.algeomath.kr/",
-              desc: "한국과학창의재단의 수학 탐구 플랫폼",
-              detail: "도형 그리기, 그래프 그리기, 블록 코딩 기능으로 수학 개념을 직접 조작하며 탐구할 수 있고, 교과 연계 활동 자료도 제공합니다."
-            }
-          ]
-        },
-        {
-          title: "과학",
-          items: [
-            {
-              name: "스텔라리움 웹",
-              url: "https://stellarium-web.org/",
-              desc: "브라우저에서 보는 실시간 밤하늘 별자리 지도",
-              detail: "날짜·시간·장소를 바꾸며 별자리와 행성, 달의 위치를 확인할 수 있어 지구와 우주 단원 수업에 활용하기 좋습니다."
-            }
-          ]
-        },
-        {
-          title: "사회",
-          items: [
-            {
-              name: "구글 어스",
-              url: "https://earth.google.com/web/",
-              desc: "3D 지구본으로 세계 곳곳을 탐험하는 구글 지도 서비스",
-              detail: "위성 사진과 3D 지형, 스트리트 뷰로 우리 지역과 세계 여러 나라의 자연환경과 인문환경을 생생하게 살펴볼 수 있습니다."
-            }
-          ]
-        },
-        {
-          title: "영어",
-          items: [
-            {
-              name: "퀴즐렛",
-              url: "https://quizlet.com/kr",
-              desc: "낱말 카드와 학습 게임으로 단어를 익히는 학습 도구",
-              detail: "영어 단어 세트를 만들어 플래시카드, 짝맞추기, 테스트 등 여러 방식으로 반복 학습할 수 있습니다."
-            },
-            {
-              name: "Storyline Online",
-              url: "https://storylineonline.net/",
-              desc: "배우들이 영어 그림책을 읽어 주는 무료 영상 사이트",
-              detail: "그림책 장면과 함께 원어민의 실감 나는 낭독을 들을 수 있어 영어 듣기와 읽기 수업에 활용하기 좋습니다."
-            }
-          ]
-        },
-        {
-          title: "음악",
-          items: [
-            {
-              name: "크롬 뮤직랩",
-              url: "https://musiclab.chromeexperiments.com/",
-              desc: "놀이처럼 음악 원리를 체험하는 구글의 음악 실험실",
-              detail: "송 메이커, 리듬, 화음, 소리 파형 등 다양한 실험으로 설치 없이 바로 작곡하고 음악 요소를 탐구할 수 있습니다."
-            }
-          ]
-        },
-        {
-          title: "미술",
-          items: [
-            {
-              name: "투닝",
-              url: "https://tooning.io/",
-              desc: "AI로 웹툰·캐릭터를 쉽게 만드는 디지털 창작 도구",
-              detail: "글만 입력해도 AI가 장면을 만들어 주고, 캐릭터 표정·동작을 바꿔 4컷 만화나 학습 만화를 손쉽게 제작할 수 있습니다."
-            },
-            {
-              name: "캔바",
-              url: "https://www.canva.com/",
-              desc: "템플릿 기반 온라인 디자인 도구",
-              detail: "포스터, 카드뉴스, 프레젠테이션 등을 다양한 템플릿으로 쉽게 디자인하고 모둠별로 함께 편집할 수 있습니다."
-            },
-            {
-              name: "구글 아트 앤 컬처",
-              url: "https://artsandculture.google.com/",
-              desc: "세계 미술관·박물관 작품을 고화질로 감상하는 구글 서비스",
-              detail: "명화를 확대해 붓 터치까지 살펴보고, 가상 미술관 투어와 다양한 미술 놀이 실험으로 감상 수업을 할 수 있습니다."
-            },
-            {
-              name: "미리캔버스",
-              url: "https://www.miricanvas.com/",
-              desc: "한글 템플릿이 풍부한 국내 온라인 디자인 도구",
-              detail: "포스터, 카드뉴스, 상장, 학급 게시물 등을 한글 글꼴과 템플릿으로 쉽게 만들 수 있습니다."
-            }
-          ]
-        },
-        {
-          title: "실과",
-          items: [
-            {
-              name: "농사로",
-              url: "https://www.nongsaro.go.kr/",
-              desc: "농촌진흥청의 농업기술 정보 포털",
-              detail: "작물별 재배 방법과 시기, 병해충 정보를 찾아볼 수 있어 식물 기르기와 텃밭 가꾸기 단원에 활용하기 좋습니다."
-            },
-            {
-              name: "커리어넷",
-              url: "https://www.career.go.kr/",
-              desc: "교육부·한국직업능력연구원의 진로 정보 사이트",
-              detail: "진로 심리검사, 직업 정보, 학과 정보, 진로 활동 자료를 제공해 일과 직업·진로 탐색 수업에 활용할 수 있습니다."
-            }
-          ]
-        },
-        { title: "체육", items: [] }
-      ]
-    },
-
     /* ───────────────────────── 코딩 관련 사이트 ───────────────────────── */
     {
       id: "coding",
@@ -694,210 +897,6 @@ window.SITE = {
               url: "https://reflect.microsoft.com/ko",
               desc: "감정 체크인과 성찰 질문을 위한 마이크로소프트 도구",
               detail: "귀여운 감정 몬스터로 오늘의 기분을 표현하는 체크인을 만들고, 학급 전체의 감정 흐름을 확인할 수 있습니다."
-            }
-          ]
-        }
-      ]
-    },
-
-    /* ───────────────────────── 그 외 유용한 사이트 ───────────────────────── */
-    {
-      id: "useful",
-      title: "그 외 유용한 사이트",
-      icon: "🧰",
-      summary: "수업 준비, 퀴즈, 의견 수합, URL 단축, 웹 배포 도구",
-      sections: [
-        {
-          title: "수업 준비 및 수업 때 유용한 기능 (교사)",
-          items: [
-            {
-              name: "줌잇(ZOOMIT)",
-              url: "https://learn.microsoft.com/ko-kr/sysinternals/downloads/zoomit",
-              tag: "윈도우 프로그램",
-              desc: "화면 확대와 실시간 판서가 가능한 발표 보조 도구",
-              detail: "단축키로 화면의 특정 부분을 확대하고, 화면 위에 글씨나 도형을 그리며 설명할 수 있습니다."
-            },
-            {
-              name: "Snipaste",
-              url: "https://www.snipaste.com/",
-              tag: "윈도우·맥 프로그램",
-              desc: "캡처 후 화면에 고정(Pin)할 수 있는 캡처 프로그램",
-              detail: "원하는 영역을 빠르게 캡처한 뒤 반투명 창으로 화면 맨 위에 띄워 두고, 자료를 참고하며 작업할 수 있습니다."
-            },
-            {
-              name: "드래그 프리",
-              url: "https://chromewebstore.google.com/detail/%EB%93%9C%EB%9E%98%EA%B7%B8%ED%94%84%EB%A6%AC%EB%A7%88%EC%9A%B0%EC%8A%A4%EC%A0%9C%ED%95%9C-%ED%95%B4%EC%A0%9C+%EA%B8%80%EC%9E%90%EC%88%98%EC%84%B8%EA%B8%B0+%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%A0%80%EC%9E%A5/cnfngpgfjllafbghaimjcmailafcdhod?utm_source=ext_app_menu",
-              tag: "크롬 확장 프로그램",
-              desc: "우클릭·드래그 제한을 풀어 주는 브라우저 확장 프로그램",
-              detail: "복사나 드래그가 막힌 웹페이지에서 텍스트를 자유롭게 선택할 수 있게 해 줍니다."
-            },
-            {
-              name: "감마AI",
-              url: "https://gamma.app/create/generate",
-              desc: "주제만 입력하면 발표 자료(PPT)를 만들어 주는 AI",
-              detail: "생성된 슬라이드의 문장, 이미지, 레이아웃을 하나하나 수정할 수 있고 PPT 파일로 내려받을 수 있습니다."
-            },
-            {
-              name: "클래스툴",
-              url: "https://ctool.co.kr/",
-              desc: "실시간 상호작용 수업 지원 올인원 도구",
-              detail: "화면 공유, 화이트보드, 웹링크 전송, OX·객관식 퀴즈, 학생 화면 모니터링을 지원하며 학생은 회원가입 없이 클래스 코드로 참여합니다."
-            },
-            {
-              name: "캔바 AI",
-              url: "https://www.canva.com/ai",
-              desc: "캔바에 내장된 AI 디자인·글쓰기 기능",
-              detail: "수업 활동지와 슬라이드를 빠르게 제작하고, 페이지 번역과 음성 삽입까지 할 수 있습니다."
-            }
-          ]
-        },
-        {
-          title: "수업할 때 유용한 기능 (학생)",
-          items: [
-            {
-              name: "스노클",
-              url: "https://snorkl.app/",
-              desc: "학생의 풀이 설명에 AI가 즉시 피드백하는 플랫폼",
-              detail: "학생이 화면에 풀이를 쓰고 목소리로 설명을 녹음하면, AI가 생각 과정을 분석해 바로 피드백을 줍니다."
-            },
-            {
-              name: "스노클(사용방법)",
-              url: "https://www.youtube.com/watch?v=TuReGPbbhWc",
-              tag: "YouTube",
-              desc: "스노클 사용 방법 안내 영상",
-              detail: "과제 만들기부터 학생 참여, 피드백 확인까지 스노클의 기본 사용 흐름을 영상으로 확인할 수 있습니다."
-            }
-          ]
-        },
-        {
-          title: "학습 정리 퀴즈",
-          items: [
-            {
-              name: "김킷",
-              url: "https://www.gimkit.com/",
-              desc: "게임으로 복습하는 실시간 참여형 퀴즈 플랫폼",
-              detail: "정답을 맞혀 얻은 가상 화폐로 아이템을 사거나 전략을 펼치며 학습에 몰입할 수 있습니다."
-            },
-            {
-              name: "띵커벨",
-              url: "https://www.tkbell.co.kr/user/main.do?oauth2=ok&localeLanguage=ko&currentURL=%2Fuser%2Foauth2%2Foauth2LoginCheckCallback.do",
-              desc: "국내 수업 환경에 맞춘 상호작용형 퀴즈·평가 도구",
-              detail: "퀴즈, 워크시트, 보드 활동으로 학생의 이해도를 실시간으로 확인하고 피드백할 수 있습니다."
-            },
-            {
-              name: "블루킷",
-              url: "https://www.blooket.com/",
-              desc: "다양한 게임 모드의 액션형 온라인 퀴즈",
-              detail: "타워 디펜스, 레이스, 농장 경영 등 미니게임 형식으로 퀴즈를 풀며 학습 효과를 높입니다."
-            },
-            {
-              name: "젭퀴즈",
-              url: "https://quiz.zep.us/",
-              desc: "메타버스 공간에서 푸는 퀴즈 플랫폼",
-              detail: "아바타를 움직여 가상 공간을 탐험하며 O/X 퀴즈나 객관식 문제에 참여합니다."
-            },
-            {
-              name: "패들렛 아케이드",
-              url: "https://arcade.padlet.com/?utm_source=padlet_com_production&utm_medium=padlet_com_app_nav_dashboard&utm_campaign=promote_ta_on_padlet_app&utm_content=padlet_com_nav_desktop",
-              desc: "수업 자료를 게임으로 바꿔 주는 AI 게임 제작 도구",
-              detail: "주제나 문서, 웹 링크를 넣으면 AI가 짝맞추기·플래시카드·객관식 등 학습 게임을 빠르게 만들어 줍니다."
-            }
-          ]
-        },
-        {
-          title: "의견 수합",
-          items: [
-            {
-              name: "멘티미터",
-              url: "https://www.mentimeter.com/",
-              desc: "실시간 투표·워드클라우드 프레젠테이션 도구",
-              detail: "투표, 워드클라우드, 퀴즈, Q&A 슬라이드로 학생 의견을 즉시 모으고 시각화합니다."
-            },
-            {
-              name: "심스페이스",
-              url: "https://diary.seamspace.me/login",
-              desc: "AI 기반 학생 마음건강·사회정서학습(SEL) 플랫폼",
-              detail: "학생 감정 일기를 AI가 분석해 학급 정서 상태와 위기 신호를 교사 대시보드로 안내합니다."
-            },
-            {
-              name: "패들렛",
-              url: "https://padlet.com/",
-              desc: "의견과 자료를 함께 붙이는 디지털 협업 담벼락",
-              detail: "텍스트, 이미지, 영상, 링크를 메모지처럼 게시해 모둠 활동, 브레인스토밍, 과제 수집에 활용합니다."
-            },
-            {
-              name: "패들렛 샌드박스",
-              url: "https://padlet.com/site/sandbox",
-              desc: "패들렛의 자유 캔버스형 협업 화이트보드",
-              detail: "빈 캔버스 위에 그림, 글, 카드, 영상을 자유롭게 배치하며 실시간으로 함께 작업할 수 있습니다."
-            },
-            {
-              name: "캔바(라이브 기능)",
-              url: "https://www.canva.com/",
-              desc: "발표 중 청중과 실시간으로 소통하는 캔바 라이브",
-              detail: "발표 화면의 링크나 QR코드로 학생들이 질문·의견을 보내면 발표 화면에 실시간으로 띄울 수 있습니다."
-            }
-          ]
-        },
-        {
-          title: "수업에 바로 쓸 수 있는 에듀테크",
-          items: [
-            {
-              name: "에듀베이지",
-              url: "https://www.edubeige.com/",
-              desc: "선생님을 위한 에듀테크 수업 아이디어 모음",
-              detail: "국어·수학·학급경영 등 과목과 상황별로 에듀테크 도구와 활용 수업 사례를 찾아볼 수 있습니다."
-            }
-          ]
-        },
-        {
-          title: "에듀테크 모음",
-          items: [
-            {
-              name: "에듀집",
-              url: "https://www.edzip.kr/",
-              desc: "다양한 에듀테크 서비스를 모아 소개하는 플랫폼",
-              detail: "분야별 에듀테크 서비스 정보를 한곳에서 비교하고 수업에 맞는 도구를 고를 수 있습니다."
-            }
-          ]
-        },
-        {
-          title: "URL 단축 서비스",
-          items: [
-            {
-              name: "숏.한국",
-              url: "https://xn--0p4b.xn--3e0b707e/",
-              desc: "한글 도메인 기반 URL 단축 서비스",
-              detail: "긴 링크를 기억하기 쉬운 짧은 한글 주소로 바꿔 학생들에게 쉽게 안내할 수 있습니다."
-            },
-            {
-              name: "bit.ly",
-              url: "https://bitly.com/",
-              desc: "전 세계에서 널리 쓰이는 URL 단축 서비스",
-              detail: "짧은 링크와 QR코드를 만들고 클릭 수 통계를 확인할 수 있습니다. (회원가입 필요)"
-            },
-            {
-              name: "enn.kr",
-              url: "https://u.lrl.kr/",
-              desc: "간편한 무료 URL 단축 서비스",
-              detail: "회원가입 없이 긴 주소를 붙여 넣기만 하면 짧은 링크를 바로 만들 수 있습니다."
-            }
-          ]
-        },
-        {
-          title: "HTML 배포 사이트",
-          items: [
-            {
-              name: "깃허브(GitHub)",
-              url: "https://github.com/",
-              desc: "코드 저장소이자 무료 웹사이트 배포(GitHub Pages) 서비스",
-              detail: "직접 만든 HTML 파일을 저장소에 올리고 Pages 기능을 켜면 무료로 웹사이트 주소를 받을 수 있습니다. 이 사이트도 GitHub Pages로 배포되었습니다."
-            },
-            {
-              name: "Vercel",
-              url: "https://vercel.com/",
-              desc: "GitHub와 연동되는 웹사이트 자동 배포 플랫폼",
-              detail: "GitHub 저장소를 연결하면 코드를 올릴 때마다 자동으로 사이트가 갱신됩니다."
             }
           ]
         }
