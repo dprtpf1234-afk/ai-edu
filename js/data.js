@@ -89,6 +89,24 @@ window.SITE = {
               url: "https://www.playsw.or.kr/ai-contents/practice/1",
               desc: "‘소프트웨어야 놀자’의 스마트팜 인공지능 체험 콘텐츠",
               detail: "농장을 배경으로 데이터를 모으고 AI를 학습시켜 작물을 관리해 보며, 데이터를 바탕으로 AI가 판단하는 원리를 단계별로 익힙니다."
+            },
+            {
+              name: "Machine Learning for Kids",
+              url: "https://machinelearningforkids.co.uk/",
+              desc: "직접 학습시킨 AI 모델을 스크래치 프로젝트에 활용하는 교육 사이트",
+              detail: "글·이미지·숫자·소리 데이터를 모아 분류 모델을 만들고, 스크래치 블록으로 불러와 챗봇이나 게임을 만들어 볼 수 있습니다. (일부 메뉴 영어)"
+            },
+            {
+              name: "Code.org 댄스 파티",
+              url: "https://code.org/dance",
+              desc: "블록 코딩으로 춤추는 캐릭터를 만드는 Code.org 활동",
+              detail: "좋아하는 음악에 맞춰 캐릭터의 춤 동작을 코딩하고, AI 기능으로 분위기에 어울리는 효과를 자동으로 만들어 볼 수 있습니다."
+            },
+            {
+              name: "구글 AI 실험 모음",
+              url: "https://experiments.withgoogle.com/collection/ai",
+              desc: "구글이 만든 AI 체험 실험을 한곳에 모은 사이트",
+              detail: "그림·음악·언어·카메라 등을 활용한 다양한 AI 실험을 둘러보며 수업에 쓸 새로운 체험 활동을 찾을 수 있습니다."
             }
           ]
         },
@@ -135,6 +153,12 @@ window.SITE = {
               url: "https://artsexperiments.withgoogle.com/living-archive",
               desc: "포즈를 이어 붙여 나만의 안무를 만드는 구글 예술 실험",
               detail: "다양한 무용 동작을 둘러보거나, 웹캠 앞에서 취한 포즈와 비슷한 동작을 찾아 이어 붙여 안무를 완성할 수 있습니다."
+            },
+            {
+              name: "Semi-Conductor",
+              url: "https://semiconductor.withgoogle.com/",
+              desc: "팔 동작으로 가상 오케스트라를 지휘하는 구글 실험",
+              detail: "웹캠 앞에서 팔을 움직이면 AI가 자세를 인식해 연주의 빠르기, 셈여림, 악기 파트를 바꿔 줍니다. 음악 수업과 연계하기 좋습니다."
             }
           ]
         },
@@ -227,6 +251,19 @@ window.SITE = {
               url: "https://wzine.kr/goe_ai/01.html?pageNum=30",
               desc: "경기도교육청의 초등학생용 AI 윤리 디지털 교재",
               detail: "연결된 페이지는 ‘AI가 그린 그림이나 만든 음악을 어떻게 바라보고 써야 할까?’를 다루는 ‘인공지능과 예술’ 단원입니다."
+            },
+            {
+              name: "Moral Machine",
+              url: "https://www.moralmachine.net/hl/kr",
+              desc: "MIT의 자율주행차 윤리 딜레마 체험 사이트",
+              detail: "피할 수 없는 사고 상황에서 자율주행차가 누구를 보호해야 할지 직접 선택해 보고, 다른 사람들의 판단과 비교하며 AI 윤리를 토론할 수 있습니다."
+            },
+            {
+              name: "Survival of the Best Fit",
+              url: "https://www.survivalofthebestfit.com/",
+              tag: "영어",
+              desc: "AI 채용 시스템의 편향을 체험하는 게임",
+              detail: "직접 지원자를 뽑아 AI를 학습시키는 과정에서, 데이터에 담긴 편견이 AI의 결정을 어떻게 불공정하게 만드는지 체험합니다."
             }
           ]
         }
@@ -238,7 +275,7 @@ window.SITE = {
       id: "physical-ai",
       title: "피지컬AI",
       icon: "🦾",
-      summary: "핑퐁로봇, 레고 스파이크, 마이크로비트, 햄스터 로봇 수업 자료",
+      summary: "핑퐁로봇, 레고 스파이크, 마이크로비트, 햄스터 로봇, 아두이노 수업 자료",
       intro: {
         heading: "피지컬 AI (PHYSICAL AI)",
         text: "피지컬(physical), 즉 물리적이라는 뜻의 영어 형용사와 인공지능을 뜻하는 AI(Artificial Intelligence)의 합성어로, 디지털 공간에 한정된 기존 인공지능과 달리 물리적인 세계에서 직접 행동하고 상호 작용하도록 설계된 인공지능 시스템이다. 현실 세계에서 로봇, 자율주행차 등 자율 시스템이 물리적 세계를 인지 및 이해하고 복잡한 행동을 수행하는 인공지능을 가리킨다.",
@@ -275,6 +312,12 @@ window.SITE = {
               tag: "Google Drive",
               desc: "핑퐁로봇 관련 기타 공개 자료 모음",
               detail: "위 분류에 속하지 않는 각종 참고 자료와 추가 공개 자료를 모아 두었습니다."
+            },
+            {
+              name: "로보라이즌 (핑퐁로봇 공식)",
+              url: "https://www.roborisen.com/",
+              desc: "핑퐁로봇 제조사 공식 사이트",
+              detail: "핑퐁로봇 제품 정보와 전용 앱, 펌웨어, 공식 교육 자료와 소식을 확인할 수 있습니다."
             }
           ]
         },
@@ -286,6 +329,12 @@ window.SITE = {
               url: "https://education.lego.com/ko-kr/",
               desc: "레고 스파이크 프라임·에센셜 공식 교육 사이트",
               detail: "레고 블록과 모터·센서로 로봇을 만들고 블록/파이썬 코딩으로 제어하는 STEAM 수업 자료와 수업 계획안을 제공합니다."
+            },
+            {
+              name: "LEGO SPIKE 웹앱",
+              url: "https://spike.legoeducation.com/",
+              desc: "설치 없이 브라우저에서 쓰는 레고 스파이크 코딩 앱",
+              detail: "크롬 브라우저에서 스파이크 허브를 연결해 블록·파이썬 코딩을 바로 할 수 있어, 학교 기기에 프로그램을 설치하기 어려울 때 유용합니다."
             }
           ]
         },
@@ -303,6 +352,12 @@ window.SITE = {
               url: "https://makecode.microbit.org/",
               desc: "마이크로비트용 블록·자바스크립트·파이썬 코딩 에디터",
               detail: "웹 브라우저에서 블록 코딩으로 프로그램을 만들고, 가상 시뮬레이터로 확인한 뒤 마이크로비트에 바로 내려받을 수 있습니다."
+            },
+            {
+              name: "micro:bit classroom",
+              url: "https://classroom.microbit.org/",
+              desc: "학급 단위로 마이크로비트 코딩 수업을 운영하는 도구",
+              detail: "교사가 활동을 만들어 학생들에게 코드를 나눠 주고, 학생들이 작성한 코드를 모아 확인하며 수업을 진행할 수 있습니다."
             }
           ]
         },
@@ -314,6 +369,17 @@ window.SITE = {
               url: "https://robomation.net/",
               desc: "햄스터 S·라쿤봇 등 교육용 로봇 제조사 공식 사이트",
               detail: "코딩 교육용 로봇 ‘햄스터 S’의 소프트웨어, 교육 자료, 활용 영상을 확인할 수 있습니다. 엔트리·스크래치와 연동해 수업할 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "아두이노",
+          items: [
+            {
+              name: "아두이노 공식",
+              url: "https://www.arduino.cc/",
+              desc: "센서·모터를 연결해 만드는 피지컬 컴퓨팅 보드 공식 사이트",
+              detail: "아두이노 보드와 개발 프로그램(IDE), 예제 프로젝트를 제공합니다. 고학년 이상의 심화 피지컬 컴퓨팅 수업에 활용할 수 있습니다."
             }
           ]
         }
@@ -335,6 +401,24 @@ window.SITE = {
               url: "https://samboard.vivasam.com/landing",
               desc: "비상교육 비바샘의 수업용 디지털 보드",
               detail: "교과서 자료와 다양한 수업 도구를 한 화면에 띄워 판서하고, 학생 참여 활동을 진행할 수 있습니다."
+            },
+            {
+              name: "표준국어대사전",
+              url: "https://stdict.korean.go.kr/",
+              desc: "국립국어원이 만든 공식 국어사전",
+              detail: "낱말의 뜻, 발음, 활용형, 예문을 정확하게 찾아볼 수 있어 낱말 탐구와 국어사전 활용 수업에 쓰기 좋습니다."
+            },
+            {
+              name: "우리말샘",
+              url: "https://opendict.korean.go.kr/",
+              desc: "국립국어원의 참여형 국어사전",
+              detail: "신조어·지역어·전문어까지 폭넓게 실려 있고 그림 자료도 함께 볼 수 있어, 표준국어대사전과 비교하며 낱말을 탐구할 수 있습니다."
+            },
+            {
+              name: "바른한글 맞춤법 검사기",
+              url: "https://nara-speller.co.kr/speller/",
+              desc: "부산대학교와 나라인포테크가 만든 맞춤법·문법 검사기",
+              detail: "글을 붙여 넣으면 틀린 맞춤법과 띄어쓰기를 찾아 고칠 말과 이유를 알려 줘, 글쓰기 후 스스로 고쳐 쓰기 활동에 활용할 수 있습니다."
             }
           ]
         },
@@ -352,13 +436,65 @@ window.SITE = {
               url: "https://kosis.kr/edu/index/index.do?sso=ok",
               desc: "통계청 KOSIS의 어린이·청소년 통계 교육 사이트",
               detail: "그래프 그리기, 통계 퀴즈, 통계 활용 사례 등으로 자료와 가능성 단원 수업에 활용하기 좋습니다."
+            },
+            {
+              name: "알지오매스",
+              url: "https://www.algeomath.kr/",
+              desc: "한국과학창의재단의 수학 탐구 플랫폼",
+              detail: "도형 그리기, 그래프 그리기, 블록 코딩 기능으로 수학 개념을 직접 조작하며 탐구할 수 있고, 교과 연계 활동 자료도 제공합니다."
             }
           ]
         },
-        { title: "과학", items: [] },
-        { title: "사회", items: [] },
-        { title: "영어", items: [] },
-        { title: "음악", items: [] },
+        {
+          title: "과학",
+          items: [
+            {
+              name: "스텔라리움 웹",
+              url: "https://stellarium-web.org/",
+              desc: "브라우저에서 보는 실시간 밤하늘 별자리 지도",
+              detail: "날짜·시간·장소를 바꾸며 별자리와 행성, 달의 위치를 확인할 수 있어 지구와 우주 단원 수업에 활용하기 좋습니다."
+            }
+          ]
+        },
+        {
+          title: "사회",
+          items: [
+            {
+              name: "구글 어스",
+              url: "https://earth.google.com/web/",
+              desc: "3D 지구본으로 세계 곳곳을 탐험하는 구글 지도 서비스",
+              detail: "위성 사진과 3D 지형, 스트리트 뷰로 우리 지역과 세계 여러 나라의 자연환경과 인문환경을 생생하게 살펴볼 수 있습니다."
+            }
+          ]
+        },
+        {
+          title: "영어",
+          items: [
+            {
+              name: "퀴즐렛",
+              url: "https://quizlet.com/kr",
+              desc: "낱말 카드와 학습 게임으로 단어를 익히는 학습 도구",
+              detail: "영어 단어 세트를 만들어 플래시카드, 짝맞추기, 테스트 등 여러 방식으로 반복 학습할 수 있습니다."
+            },
+            {
+              name: "Storyline Online",
+              url: "https://storylineonline.net/",
+              desc: "배우들이 영어 그림책을 읽어 주는 무료 영상 사이트",
+              detail: "그림책 장면과 함께 원어민의 실감 나는 낭독을 들을 수 있어 영어 듣기와 읽기 수업에 활용하기 좋습니다."
+            }
+          ]
+        },
+        {
+          title: "음악",
+          items: [
+            {
+              name: "크롬 뮤직랩",
+              url: "https://musiclab.chromeexperiments.com/",
+              desc: "놀이처럼 음악 원리를 체험하는 구글의 음악 실험실",
+              detail: "송 메이커, 리듬, 화음, 소리 파형 등 다양한 실험으로 설치 없이 바로 작곡하고 음악 요소를 탐구할 수 있습니다."
+            }
+          ]
+        },
         {
           title: "미술",
           items: [
@@ -373,10 +509,38 @@ window.SITE = {
               url: "https://www.canva.com/",
               desc: "템플릿 기반 온라인 디자인 도구",
               detail: "포스터, 카드뉴스, 프레젠테이션 등을 다양한 템플릿으로 쉽게 디자인하고 모둠별로 함께 편집할 수 있습니다."
+            },
+            {
+              name: "구글 아트 앤 컬처",
+              url: "https://artsandculture.google.com/",
+              desc: "세계 미술관·박물관 작품을 고화질로 감상하는 구글 서비스",
+              detail: "명화를 확대해 붓 터치까지 살펴보고, 가상 미술관 투어와 다양한 미술 놀이 실험으로 감상 수업을 할 수 있습니다."
+            },
+            {
+              name: "미리캔버스",
+              url: "https://www.miricanvas.com/",
+              desc: "한글 템플릿이 풍부한 국내 온라인 디자인 도구",
+              detail: "포스터, 카드뉴스, 상장, 학급 게시물 등을 한글 글꼴과 템플릿으로 쉽게 만들 수 있습니다."
             }
           ]
         },
-        { title: "실과", items: [] },
+        {
+          title: "실과",
+          items: [
+            {
+              name: "농사로",
+              url: "https://www.nongsaro.go.kr/",
+              desc: "농촌진흥청의 농업기술 정보 포털",
+              detail: "작물별 재배 방법과 시기, 병해충 정보를 찾아볼 수 있어 식물 기르기와 텃밭 가꾸기 단원에 활용하기 좋습니다."
+            },
+            {
+              name: "커리어넷",
+              url: "https://www.career.go.kr/",
+              desc: "교육부·한국직업능력연구원의 진로 정보 사이트",
+              detail: "진로 심리검사, 직업 정보, 학과 정보, 진로 활동 자료를 제공해 일과 직업·진로 탐색 수업에 활용할 수 있습니다."
+            }
+          ]
+        },
         { title: "체육", items: [] }
       ]
     },
@@ -408,6 +572,25 @@ window.SITE = {
               url: "https://code.org",
               desc: "전 세계 학생을 위한 무료 컴퓨터 과학·AI 교육 사이트",
               detail: "‘Hour of Code’ 활동과 학년별 코딩 코스, AI 교육 프로그램을 한국어로 제공합니다."
+            },
+            {
+              name: "스크래치",
+              url: "https://scratch.mit.edu/",
+              desc: "MIT가 만든 세계 대표 블록 코딩 플랫폼",
+              detail: "블록을 조립해 이야기·게임·애니메이션을 만들고, 전 세계 친구들과 작품을 공유하고 리믹스할 수 있습니다."
+            },
+            {
+              name: "소프트웨어야 놀자",
+              url: "https://www.playsw.or.kr/",
+              desc: "네이버 커넥트재단의 SW·AI 교육 사이트",
+              detail: "엔트리 기반 수업 자료, 교재, AI 체험 콘텐츠를 무료로 제공해 초등 SW·AI 수업 준비에 활용할 수 있습니다."
+            },
+            {
+              name: "코드컴뱃",
+              url: "https://codecombat.com/",
+              tag: "영어",
+              desc: "게임을 하며 파이썬·자바스크립트를 배우는 코딩 게임",
+              detail: "캐릭터를 움직이는 코드를 직접 입력하며 던전을 탐험해, 텍스트 코딩에 자연스럽게 입문할 수 있습니다."
             }
           ]
         }
@@ -733,29 +916,6 @@ window.SITE = {
               url: "https://vercel.com/",
               desc: "GitHub와 연동되는 웹사이트 자동 배포 플랫폼",
               detail: "GitHub 저장소를 연결하면 코드를 올릴 때마다 자동으로 사이트가 갱신됩니다."
-            }
-          ]
-        }
-      ]
-    },
-
-    /* ───────────────────────── 2026 AI 중점학교(대교초) ───────────────────────── */
-    {
-      id: "ai-school-2026",
-      title: "2026 AI 중점학교(대교초)",
-      icon: "🏫",
-      summary: "AI 중점학교 운영 관련 안내",
-      notice: "개인정보 노출 주의 — 이 사이트는 누구나 볼 수 있는 공개 웹사이트입니다. 출장 계획·명단 등 개인정보가 담긴 문서는 직접 올리지 말고, 접근 권한이 제한된 구글 문서 링크로 연결해 주세요.",
-      sections: [
-        {
-          title: "2학기 출장 계획",
-          items: [
-            {
-              name: "2학기 출장 계획",
-              url: "",
-              tag: "권한 제한 문서",
-              desc: "학교 구성원만 볼 수 있는 구글 문서로 연결 예정",
-              detail: "js/data.js 에서 이 항목의 url 에 공유 권한이 제한된 구글 문서 주소를 넣으면 버튼이 활성화됩니다."
             }
           ]
         }
