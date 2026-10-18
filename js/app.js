@@ -93,6 +93,14 @@
         </div>
         ${item.desc ? `<p class="card-desc">${esc(item.desc)}</p>` : ""}
         ${item.detail ? `<p class="card-detail">${esc(item.detail)}</p>` : `<p class="card-detail"></p>`}
+        ${item.tip ? `
+        <div class="card-tip">
+          <span class="card-tip-label">
+            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1 2V16h5.2v-.2c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            수업 활용 팁
+          </span>
+          <p>${esc(item.tip)}</p>
+        </div>` : ""}
         ${btn}
       </article>`;
   }
@@ -188,7 +196,7 @@
   const index = [];
   PAGES.forEach((p) => p.sections.forEach((s) => s.items.forEach((it) => {
     if (!it.url) return;
-    index.push({ ...it, page: p, section: s.title, hay: [it.name, it.desc, it.detail, it.tag, s.title, p.title].join(" ").toLowerCase() });
+    index.push({ ...it, page: p, section: s.title, hay: [it.name, it.desc, it.detail, it.tip, it.tag, s.title, p.title].join(" ").toLowerCase() });
   })));
 
   let focusIdx = -1;
