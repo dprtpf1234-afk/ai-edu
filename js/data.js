@@ -630,13 +630,6 @@ window.SITE = {
           title: "핑퐁로봇",
           items: [
             {
-              name: "핑퐁로봇 매뉴얼 자료",
-              url: "https://drive.google.com/drive/folders/1cfqndBZZSMzMMuP6L-qhRJSGYANI7gzM",
-              tag: "Google Drive",
-              desc: "핑퐁로봇 기본 사용법과 매뉴얼 모음",
-              detail: "로봇 연결, 펌웨어, 앱 사용 방법 등 처음 핑퐁로봇을 다룰 때 필요한 안내 자료가 들어 있습니다."
-            },
-            {
               name: "핑퐁로봇 주제별 수업자료",
               url: "https://drive.google.com/drive/folders/1hpdJ5NCL0WVLSj94FqcckM0or7BTaDta",
               tag: "Google Drive",
