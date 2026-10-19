@@ -1,5 +1,5 @@
 /* ───────── 색상·글꼴 (여기만 바꾸면 전체 분위기가 바뀝니다) ───────── */
-/* 2026 팬톤 올해의 색 PANTONE 11-4201 Cloud Dancer(#F0EEE9)를 바탕색으로 쓰는 따뜻한 팔레트 */
+/* 따뜻한 화이트(#F0EEE9)를 바탕색으로 쓰는 팔레트 */
 :root {
   --cloud: #f0eee9;        /* Cloud Dancer — 페이지 바탕 */
   --cloud-deep: #e7e3db;   /* 조금 더 짙은 Cloud Dancer (히어로·호버) */
@@ -317,9 +317,9 @@ mark { background: #ffe8a3; color: inherit; border-radius: 3px; padding: 0 1px; 
 
 /* ───────── 바닥글 ───────── */
 .footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13.5px; }
-.footer-inner { max-width: var(--max); margin: 0 auto; padding: 28px 24px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
-.footer-color { display: inline-flex; align-items: center; gap: 8px; }
-.footer-color i { width: 14px; height: 14px; border-radius: 4px; background: var(--cloud); border: 1px solid var(--line-strong); }
+.footer-inner { max-width: var(--max); margin: 0 auto; padding: 28px 24px; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+.footer-credit { display: flex; flex-direction: column; gap: 2px; }
+.footer-credit strong { color: var(--ink-soft); font-weight: 700; margin-bottom: 4px; }
 
 .to-top {
   position: fixed; right: 20px; bottom: 20px; z-index: 30;
