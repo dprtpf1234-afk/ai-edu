@@ -19,7 +19,7 @@ window.SITE = {
   // GitHub 저장소의 data.js 편집 주소를 넣으면 홈 화면에 '자료 수정하기' 버튼이 생깁니다.
   // 예) "https://github.com/아이디/저장소이름/edit/main/js/data.js"
   editUrl: "",
-  updated: "2026-10-17",
+  updated: "2026-10-19",
 
   home: {
     heroTitle: "AI·디지털 교육 자료 모음",
